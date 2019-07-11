@@ -118,16 +118,14 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 # STATIC_ROOT = os.path.join(BASE_DIR, "static")
-
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
-# STATICFILES_DIRS = [
-#     os.path.join(BASE_DIR, "static"),
-#     os.path.join(BASE_DIR, "web/templates/static"),
-# ]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "web/templates/static"),
+]
 
 # Media files - 업로드를 하는 URL과 디렉토리 설정
-MEDIA_URL = '/files/' # 업로드 할 경로
-MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads') # 로컬 디렉토리 어디에 저장할 것인지
+MEDIA_URL = '/media/' # 업로드 할 경로
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # 로컬 디렉토리 어디에 저장할 것인지
 
 try:
     from .local_settings import *
