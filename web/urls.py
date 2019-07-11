@@ -16,7 +16,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import include, path
 from web import views
+from django.conf.urls.static import static
+from dammin import settings
+
 
 urlpatterns = [
     path('', views.IndexView),
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
