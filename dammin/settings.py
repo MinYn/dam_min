@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'web',
 ]
 
 MIDDLEWARE = [
@@ -116,35 +117,16 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+    os.path.join(BASE_DIR, "web/templates/static"),
+]
 
 # Media files - 업로드를 하는 URL과 디렉토리 설정
 MEDIA_URL = '/files/' # 업로드 할 경로
 MEDIA_ROOT = os.path.join(BASE_DIR, 'uploads') # 로컬 디렉토리 어디에 저장할 것인지
 
-LOGGING = {
-    'version': 1,
-    'diable_existing_loggers': False,
-    'formatters': {
-        'standard': {
-            'format': '%(asctime)s [%(levelname)8s] %(message)s'
-        },
-    },
-    'handlers': {
-        'console': {
-            'level': 'DEBUG',
-            'class': 'logging.StreamHandler',
-            'formatter': 'standard'
-        },
-    },
-    'loggers': {
-        'django': {
-            'level': 'DEBUG',               # 로거의 기본 레벨. 이 레벨이 우선시 된다.
-            'handlers': ['console']
-        },
-        'dammin': {
-            'level': 'DEBUG',               # 로거의 기본 레벨. 이 레벨이 우선시 된다.
-            'handlers': ['console']
-        },
-    },
-}
+try:
+    from .local_settings import *
+except ImportError:
+    pass
