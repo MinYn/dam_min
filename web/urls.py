@@ -22,4 +22,4 @@ from dammin import settings
 
 urlpatterns = [
     path('', views.IndexView),
-] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+]
