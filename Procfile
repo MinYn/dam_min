@@ -1,1 +1,1 @@
-web: gunicorn dammin.wsgi.prod --log-file -
+web: gunicorn dammin.wsgi --log-file -
