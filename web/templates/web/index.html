@@ -978,7 +978,7 @@
                   </div>
                </div>
                <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="row justify-content-center">
-                  <!-- 라이브리 시티 설치 코드 -->
+                  {% comment %} <!-- 라이브리 시티 설치 코드 -->
                   <div id="lv-container" data-id="city" class="col-md-8 mb-6 mb-md-0" data-uid="MTAyMC80NTIzOC8yMTc1Mw==">
                      <script type="text/javascript">
                      (function(d, s) {
@@ -995,7 +995,9 @@
                      </script>
                      <noscript> 라이브리 댓글 작성을 위해 JavaScript를 활성화 해주세요</noscript>
                   </div>
-                  <!-- 시티 설치 코드 끝 -->
+                  <!-- 시티 설치 코드 끝 --> {% endcomment %}
+                  {% load disqus_tags %}
+                  {% disqus_show_comments %}
                </div>
                <!--End row-->
                <!-- <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="row justify-content-center">
@@ -1403,7 +1405,6 @@
             $("#name").addClass("fromLeftIn");
             $("#desc").removeClass("fromRightOut");
             $("#desc").addClass("fromRightIn");
-            $("#livereAd").remove();
          }
       </script>
    </body>

@@ -21,7 +21,12 @@ Created by : mutationthemes
 11.Miscellaneous
 12.Mediaqueries
 
+*/ 
 
+
+#disqus_thread {
+    width: 100%;
+}
 /*Preloader*/
 #gallery img {
 	-webkit-transition: 0.3s;

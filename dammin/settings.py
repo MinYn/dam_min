@@ -28,6 +28,8 @@ DEBUG = False
 
 ALLOWED_HOSTS = ['.herokuapp.com', '.asuscomm.com', '127.0.0.1']
 
+DISQUS_WEBSITE_SHORTNAME = 'dammin'
+SITE_ID = 1
 
 # Application definition
 
@@ -37,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'disqus',
+    'django.contrib.sites',
     'web',
     'django.contrib.staticfiles',
 ]
