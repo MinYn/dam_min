@@ -25,7 +25,7 @@ SECRET_KEY = 'f(*58#xn6gp_cx2nw4ao+2dz8xbo-h2wz3yh1!98_bqd)+0wi+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['.asuscomm.com','127.0.0.1']
+ALLOWED_HOSTS = ['dammin.herokuapp.com', '.asuscomm.com', '127.0.0.1']
 
 
 # Application definition
@@ -106,7 +106,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'ko-kr'
 
-#TIME_ZONE = 'UTC'
+# TIME_ZONE = 'UTC'
 TIME_ZONE = 'Asia/Seoul'
 USE_I18N = True
 USE_L10N = True
@@ -124,8 +124,8 @@ STATIC_ROOT = os.path.join(BASE_DIR, "static")
 # ]
 
 # Media files - 업로드를 하는 URL과 디렉토리 설정
-MEDIA_URL = '/media/' # 업로드 할 경로
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media') # 로컬 디렉토리 어디에 저장할 것인지
+MEDIA_URL = '/media/'  # 업로드 할 경로
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 로컬 디렉토리 어디에 저장할 것인지
 
 try:
     from .local_settings import *
