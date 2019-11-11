@@ -1,7 +1,7 @@
 ! function (a) {
     "use strict";
     a(window).on("load", function () {
-        //a(".loader-inner").fadeOut(), a(".loader").delay(200).fadeOut("slow")
+        a(".loader-inner").fadeOut(), a(".loader").delay(200).fadeOut("slow");
     });
     var s = a(".header"),
         e = s.offset();
@@ -48,7 +48,7 @@
         limit: 5,
         resolution: "standard_resolution",
         template: '<li><a class="hover-effect rounded-circle" target="_blank" href="{{link}}"><span class="hover-effect-container"><span class="hover-effect-icon hover-effect-icon-small"><span class="fa fa-heart hover-effect-icon-inner"></span></span></span></span><img class=" mw-100" src="{{image}}" /></a></li>'
-    }).run(), a(".countdown").countdown("2020/02/20").on("update.countdown", function (s) {
+    }).run(), a(".countdown").countdown("2020/02/22").on("update.countdown", function (s) {
         a(this).html(s.strftime('\
         <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%m</span> <span class="label">Month%!m</span></div></div>\
         <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%d</span> <span class="label">Day%!d</span></div></div>\
