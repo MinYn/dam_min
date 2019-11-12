@@ -22,7 +22,9 @@ Created by : mutationthemes
 12.Mediaqueries
 
 */ 
-
+#hello b {
+    font-size: larger;
+}
 
 #disqus_thread {
     width: 100%;
