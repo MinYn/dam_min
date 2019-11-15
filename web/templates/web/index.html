@@ -54,6 +54,7 @@
                            <li><a class=" nav-link scroll" href="#hello">인사말</a></li>
                            <li><a class=" nav-link scroll" href="#rsvp">방명록</a></li>
                            <li><a class=" nav-link scroll" href="#location">위치</a></li>
+                           <li><a class=" nav-link scroll" href="#contact">연락하기</a></li>
                         </ul>
                      </div>
                   </nav>
@@ -64,7 +65,8 @@
          <!--End header-->
          <!--Hero section-->
          <section class="gradient-overlay gradient-overlay-dark ">
-            <img class="bg-image" src="{% static "assets/img/1.jpg" %}" alt="">
+            {% comment %} <img class="bg-image" src="{% static "assets/img/1.jpg" %}" alt=""> {% endcomment %}
+            <img class="bg-image" src="{% static "assets/wedding-img/DSC08694-01.jpg" %}" alt="">
             <div class="bg-image" style="z-index:1;">
                <canvas></canvas>
             </div>
@@ -130,7 +132,8 @@
                                     l368.4115-214.6845c127.2958-74.1792,172.7084-240.1479,98.7059-367.5465C818.4728,161.3996,655.4992,118.375,528.4855,192.3897z" />
                               </mask>
                            </defs>
-                           <image mask="url(#mask)" width="981" height="885" xlink:href="{% static "assets/img/mask-lg.jpg" %}" />
+                           {% comment %} <image mask="url(#mask)" width="981" height="885" xlink:href="{% static "assets/img/mask-lg.jpg" %}" /> {% endcomment %}
+                           <image mask="url(#mask)" width="981" height="885" xlink:href="{% static "assets/wedding-img/981x885.png" %}" />
                            <g>
                               <path fill="none" stroke="#E35D5D" stroke-width="7" stroke-linecap="round" stroke-miterlimit="10" d="M747.8805,524.349
                                  c108.1955-68.637,139.1927-213.677,70.5558-321.8725S606.4696,62.2462,498.2741,130.8832l0,0" />
@@ -156,117 +159,190 @@
             <div  class="container spacer-double-lg">
                <div class="col-lg-11 mx-lg-auto">
                   <div class="row justify-content-center card-gutters">
-                     <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-7 mb-3">
-                        <div class="fluid">
-                        <a href="{% static "assets/img/offset/large/1.jpg" %}" class="popup-image hover-effect d-block">
-                           <img class="img-fluid" src="{% static "assets/img/offset/1.jpg" %}" alt="">
-                           <span class="hover-effect-container">
-                              <span class="hover-effect-icon has-svg">
-                                 <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
-                                    <g>
-                                       <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
-                                          c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
-                                          c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
-                                       <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
-                                          c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
-                                          c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
-                                          c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
-                                          c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
-                                    </g>
-                                 </svg>
-                              </span>
-                           </span>
-                        </a>
+                     <div class="col">
+                        <div class=" mb-5 pb-5">
+                           <h1 class="display-4 mb-0 text-center">사진보기</h1>
                         </div>
                      </div>
-                     <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-5 align-self-end mb-3">
-                        <a href="{% static "assets/img/offset/large/2.jpg" %}" class="popup-image hover-effect d-block">
-                           <img class="img-fluid" src="{% static "assets/img/offset/2.jpg" %}" alt="">
-                           <span class="hover-effect-container">
-                              <span class="hover-effect-icon has-svg">
-                                 <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
-                                    <g>
-                                       <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
-                                          c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
-                                          c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
-                                       <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
-                                          c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
-                                          c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
-                                          c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
-                                          c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
-                                    </g>
-                                 </svg>
+                     <div class="row">
+                        <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-7 mb-3">
+                           <div class="fluid">
+                           <a href="{% static "assets/wedding-img/DSC08327-01.jpg" %}" class="popup-image hover-effect d-block">
+                              <img class="img-fluid" src="{% static "assets/wedding-img/DSC08327-01.jpg" %}" alt="">
+                              <span class="hover-effect-container">
+                                 <span class="hover-effect-icon has-svg">
+                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                       viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
+                                       <g>
+                                          <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
+                                             c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
+                                             c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
+                                          <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
+                                             c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
+                                             c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
+                                             c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
+                                             c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
+                                       </g>
+                                    </svg>
+                                 </span>
                               </span>
-                           </span>
-                        </a>
-                     </div>
-                     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="col-5">
-                        <a href="{% static "assets/img/offset/large/3.jpg" %}" class="popup-image hover-effect d-block">
-                           <img class="img-fluid" src="{% static "assets/img/offset/3.jpg" %}" alt="">
-                           <span class="hover-effect-container">
-                              <span class="hover-effect-icon has-svg">
-                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
-                                    <g>
-                                       <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
-                                          c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
-                                          c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
-                                       <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
-                                          c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
-                                          c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
-                                          c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
-                                          c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
-                                    </g>
-                                 </svg>
+                           </a>
+                           </div>
+                        </div>
+                        <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-5 mb-3">
+                           <a href="{% static "assets/wedding-img/DSC08876.jpg" %}" class="popup-image hover-effect d-block">
+                              <img class="img-fluid" src="{% static "assets/wedding-img/DSC08876.jpg" %}" alt="">
+                              <span class="hover-effect-container">
+                                 <span class="hover-effect-icon has-svg">
+                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                       viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
+                                       <g>
+                                          <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
+                                             c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
+                                             c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
+                                          <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
+                                             c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
+                                             c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
+                                             c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
+                                             c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
+                                       </g>
+                                    </svg>
+                                 </span>
                               </span>
-                           </span>
-                        </a>
-                     </div>
-                     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="col-3">
-                        <a href="{% static "assets/img/offset/large/4.jpg" %}" class="popup-image hover-effect d-block">
-                           <img class="img-fluid" src="{% static "assets/img/offset/4.jpg" %}" alt="">
-                           <span class="hover-effect-container">
-                              <span class="hover-effect-icon has-svg">
-                                 <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
-                                    <g>
-                                       <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
-                                          c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
-                                          c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
-                                       <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
-                                          c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
-                                          c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
-                                          c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
-                                          c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
-                                    </g>
-                                 </svg>
+                           </a>
+                        </div>
+                        <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-12 mb-3">
+                           <a href="{% static "assets/wedding-img/DSC08694-01.jpg" %}" class="popup-image hover-effect d-block">
+                              <img class="img-fluid" src="{% static "assets/wedding-img/DSC08694-01.jpg" %}" alt="">
+                              <span class="hover-effect-container">
+                                 <span class="hover-effect-icon has-svg">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                       viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
+                                       <g>
+                                          <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
+                                             c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
+                                             c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
+                                          <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
+                                             c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
+                                             c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
+                                             c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
+                                             c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
+                                       </g>
+                                    </svg>
+                                 </span>
                               </span>
-                           </span>
-                        </a>
-                     </div>
-                     <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="col-3">
-                        <a href="{% static "assets/img/offset/large/5.jpg" %}" class="popup-image hover-effect d-block">
-                           <img class="img-fluid" src="{% static "assets/img/offset/5.jpg" %}" alt="">
-                           <span class="hover-effect-container">
-                              <span class="hover-effect-icon has-svg">
-                                 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                                    viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
-                                    <g>
-                                       <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
-                                          c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
-                                          c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
-                                       <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
-                                          c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
-                                          c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
-                                          c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
-                                          c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
-                                    </g>
-                                 </svg>
+                           </a>
+                        </div>
+                        <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-6 mb-3">
+                           <a href="{% static "assets/wedding-img/DSC08085.jpg" %}" class="popup-image hover-effect d-block">
+                              <img class="img-fluid" src="{% static "assets/wedding-img/DSC08085.jpg" %}" alt="">
+                              <span class="hover-effect-container">
+                                 <span class="hover-effect-icon has-svg">
+                                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                       viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
+                                       <g>
+                                          <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
+                                             c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
+                                             c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
+                                          <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
+                                             c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
+                                             c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
+                                             c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
+                                             c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
+                                       </g>
+                                    </svg>
+                                 </span>
                               </span>
-                           </span>
-                        </a>
+                           </a>
+                        </div>
+                        <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-6 mb-3">
+                           <a href="{% static "assets/wedding-img/DSC08309.jpg" %}" class="popup-image hover-effect d-block">
+                              <img class="img-fluid" src="{% static "assets/wedding-img/DSC0863901.jpg" %}" alt="">
+                              <span class="hover-effect-container">
+                                 <span class="hover-effect-icon has-svg">
+                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                       viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
+                                       <g>
+                                          <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
+                                             c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
+                                             c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
+                                          <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
+                                             c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
+                                             c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
+                                             c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
+                                             c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
+                                       </g>
+                                    </svg>
+                                 </span>
+                              </span>
+                           </a>
+                        </div>
+                        <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-12 mb-3">
+                           <a href="{% static "assets/wedding-img/DSC08309.jpg" %}" class="popup-image hover-effect d-block">
+                              <img class="img-fluid" src="{% static "assets/wedding-img/DSC08047.jpg" %}" alt="">
+                              <span class="hover-effect-container">
+                                 <span class="hover-effect-icon has-svg">
+                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                       viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
+                                       <g>
+                                          <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
+                                             c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
+                                             c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
+                                          <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
+                                             c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
+                                             c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
+                                             c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
+                                             c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
+                                       </g>
+                                    </svg>
+                                 </span>
+                              </span>
+                           </a>
+                        </div>
+                        <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-6 mb-3">
+                           <a href="{% static "assets/wedding-img/DSC08309.jpg" %}" class="popup-image hover-effect d-block">
+                              <img class="img-fluid" src="{% static "assets/wedding-img/DSC08348-01.jpg" %}" alt="">
+                              <span class="hover-effect-container">
+                                 <span class="hover-effect-icon has-svg">
+                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                       viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
+                                       <g>
+                                          <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
+                                             c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
+                                             c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
+                                          <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
+                                             c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
+                                             c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
+                                             c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
+                                             c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
+                                       </g>
+                                    </svg>
+                                 </span>
+                              </span>
+                           </a>
+                        </div>
+                        <div data-scroll="toggle(.fromTopIn, .fromTopOut)" class="col-6 mb-3">
+                           <a href="{% static "assets/wedding-img/DSC08309.jpg" %}" class="popup-image hover-effect d-block">
+                              <img class="img-fluid" src="{% static "assets/wedding-img/DSC08309.jpg" %}" alt="">
+                              <span class="hover-effect-container">
+                                 <span class="hover-effect-icon has-svg">
+                                    <svg version="1.1"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                       viewBox="0 0 73.6404 64.5606" enable-background="new 0 0 73.6404 64.5606" xml:space="preserve">
+                                       <g>
+                                          <path fill="#E25D5D" d="M36.904,6.66L36.904,6.66C28.5329-1.7395,14.9401-1.8373,6.4502,6.4736
+                                             c-8.5632,8.3827-8.5871,22.1694-0.2037,30.724l24.4097,24.9081c3.1797,3.2446,8.3876,3.2973,11.6323,0.1176l24.7745-24.2787
+                                             c8.5602-8.3889,8.832-22.3842,0.4549-30.956C59.1567-1.5672,45.4453-1.7103,36.904,6.66z"/>
+                                          <path fill="#FFFFFF" d="M44.695,28.8005c0-0.4883-0.3996-0.8879-0.8879-0.8879h-4.4394v-4.4394
+                                             c0-0.4883-0.3996-0.8879-0.8879-0.8879h-2.9596c-0.4883,0-0.8879,0.3996-0.8879,0.8879v4.4394h-4.4394
+                                             c-0.4883,0-0.8879,0.3995-0.8879,0.8879v2.9596c0,0.4883,0.3996,0.8879,0.8879,0.8879h4.4394v4.4394
+                                             c0,0.4883,0.3996,0.8879,0.8879,0.8879h2.9596c0.4883,0,0.8879-0.3996,0.8879-0.8879V32.648h4.4394
+                                             c0.4883,0,0.8879-0.3995,0.8879-0.8879V28.8005z"/>
+                                       </g>
+                                    </svg>
+                                 </span>
+                              </span>
+                           </a>
+                        </div>
                      </div>
                   </div>
                </div>
@@ -307,7 +383,8 @@
                                     l201.4838-200.1096c69.6179-69.1431,71.0768-183.7278,2.0303-253.4415C485.013-12.8027,372.7591-13.2244,303.2954,55.7655z"></path>
                               </mask>
                            </defs>
-                           <image mask="url(#mask-middle-1)" width="607" height="532" xlink:href="{% static "assets/img/mask-md.jpg" %}"></image>
+                           {% comment %} <image mask="url(#mask-middle-1)" width="607" height="532" xlink:href="{% static "assets/img/mask-md.jpg" %}"></image> {% endcomment %}
+                           <image mask="url(#mask-middle-1)" width="650" height="582" xlink:href="{% static "assets/wedding-img/981x885.png" %}"></image>
                         </svg>
                      </div>
                      </div>
@@ -541,10 +618,39 @@
                </div>
             </div>
             <!--End container-->
+            <div class="curved-decoration ">
+               <svg width="100%" height="100%" class="bg-secondary-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 2560 168.6227" enable-background="new 0 0 2560 168.6227" xml:space="preserve">
+               <g>
+               </g>
+               <g>
+                  <path d="M2560,0c0,0-219.6543,165.951-730.788,124.0771c-383.3156-31.4028-827.2138-96.9514-1244.7139-96.9514
+                     c-212.5106,0-439,3.5-584.4982,1.5844l0,139.9126h2560V0z"></path>
+               </g>
+               </svg>
+            </div>
+         </section>
+         <section id="contact" class="bg-secondary ">
+            <div  class="container spacer-double-lg">
+               <div class="col-lg-11 mx-lg-auto">
+                  <div class="row justify-content-center card-gutters">
+                     <div class="col-10 mb-3">
+                        <div class=" mb-5 pb-5 text-center">
+                           <h1 class="display-4 ">연락하기</h1>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="row text-center">
+                     <div class="col">
+                     test
+                     </div>
+                  </div>
+               </div>
+            </div>
          </section>
          <!--Hero section-->
          <section class="gradient-overlay ">
-            <img class="bg-image" src="{% static "assets/img/2.jpg" %}" alt="">
+            {% comment %} <img class="bg-image" src="{% static "assets/img/2.jpg" %}" alt=""> {% endcomment %}
+            <img class="bg-image" src="{% static "assets/wedding-img/DSC08085.jpg" %}" alt="">
             <div class="container">
                <!--row-->
                <div class="row  min-vh-80 align-items-center z-index-2 position-relative text-center">
@@ -557,8 +663,8 @@
                            </svg>
                         </a>
                      </div>
-                     <h1 data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="display-4 font-secondary  text-white mb-4">Just Married</h1>
-                     <p data-scroll="toggle(.fromRightIn, .fromRightOut)" class="w-md-50 mb-0 mx-auto text-light lead font-weight-300 "> Friendship... is not something you learn in school. But if you haven't learned the meaning of friendship, you really haven't learned anything</p>
+                     <h1 data-scroll="toggle(.fromLeftIn, .fromLeftOut)" class="display-4 font-secondary  text-white mb-4">영상 보기</h1>
+                     {% comment %} <p data-scroll="toggle(.fromRightIn, .fromRightOut)" class="w-md-50 mb-0 mx-auto text-light lead font-weight-300 "> Friendship... is not something you learn in school. But if you haven't learned the meaning of friendship, you really haven't learned anything</p> {% endcomment %}
                   </div>
                </div>
                <!--End row-->
@@ -580,123 +686,9 @@
             <div class="container">
                <!--row-->
                <div class="row justify-content-center">
-                  <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="col-md-4">
-                     <div class="signature mb-3">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 290.987 48.4512" enable-background="new 0 0 290.987 48.4512" xml:space="preserve">
-                           <g>
-                              <g>
-                                 <path stroke="#FFF9F5" stroke-width="0.2894" d="M296.1834,30.7134c-2.0213-0.5902-3.5951-1.4767-5.0921-2.9557
-                                    c-2.423,1.3602-4.6595,3.0929-7.1507,4.3203c-2.1454,1.0571-4.3421,1.3647-6.6929,1.4348
-                                    c-0.71,0.0212-1.4934-0.2033-2.0481-0.5323c-1.3835-0.8207-1.5361-1.7424-1.5535-3.2292
-                                    c-2.2689,1.4258-4.588,2.9569-6.8382,4.3676c-0.5862,0.3675-1.0173,0.4267-1.5872,0.1584
-                                    c-0.5699-0.2682-0.4711-0.7692-0.3397-1.2814c0.5421-2.1122,1.1682-4.212,1.7416-6.3131
-                                    c-1.5899,0.6096-3.1984,1.3309-4.7867,1.9208c-5.7029,2.1182-11.3633,4.2396-17.2581,5.7267
-                                    c-1.9055,0.4807-3.9326,0.7364-5.8463,0.4518c-2.7527-0.4094-3.745-2.0388-4.7875-4.3996
-                                    c-0.3998,0.2966-0.8057,0.8145-1.2206,1.0883c-1.6524,1.0907-3.2595,2.8059-5.0864,3.4273
-                                    c-2.5583,0.8701-4.2009,0.1858-5.0871-2.3684c-0.8863-2.5542-0.4088-5.3313-0.369-8.0312
-                                    c0.0234-1.5871,0.2946-3.2969,0.2749-4.9034c-0.0677,0.157-0.1068,0.3355-0.2114,0.4808
-                                    c-3.7416,5.1992-7.4058,10.4036-11.2638,15.5461c-0.2798,0.3729-0.8396,0.7027-1.3773,0.575
-                                    c-0.5377-0.1277-0.7721-0.2863-0.6319-0.9852c1.1315-5.6407,2.4031-11.3617,3.4098-17.0804
-                                    c0.5021-2.8522,0.6801-5.7921,0.9508-8.6838c0.0654-0.6989-0.0224-1.4029-0.0819-2.1047
-                                    c-0.0108-0.1279-0.2448-0.1901-0.3238-0.1018c-0.706,0.7897-1.5834,1.7646-2.1276,2.62
-                                    c-3.2373,5.0884-6.3548,10.5954-9.1161,15.7431c-1.0365,1.9323-1.5525,3.0352-2.5063,4.8012
-                                    c-0.2402,0.4446-0.5873,0.8809-0.9452,1.1724c-0.3579,0.2914-0.58,0.3011-0.94,0.1186c-0.36-0.1825-0.4562-0.448-0.4683-0.8588
-                                    c-0.0121-0.4108,0.0342-0.8651,0.2513-1.2583c3.7207-6.7374,7.4845-13.2498,11.6498-19.8172
-                                    c0.7178-1.1317,1.9241-2.5428,2.9451-3.5959c0.5119-0.528,1.2546-1.0018,2.0355-0.6871c0.7809,0.3147,1.1845,1.0432,1.1595,1.879
-                                    c-0.0988,3.3109-0.2235,6.6158-0.6228,9.8982c-0.5142,4.2273-1.358,8.3811-2.0267,12.5866
-                                    c-0.0322,0.2025,0.0002,0.4376,0.0437,0.6423c3.8472-5.1386,7.5332-10.3571,11.0083-15.7643
-                                    c0.8356,0.7256,1.4504,1.1876,1.383,2.4151c-0.1757,3.1972-0.7467,6.4888-0.8494,9.713c-0.0541,1.6989-0.119,3.5131,0.3599,5.1131
-                                    c0.4789,1.6,1.2996,1.9557,2.8698,1.2665c1.1855-0.5203,2.3886-1.5555,3.42-2.5073c1.5109-1.3943,2.9555-3.0588,4.3993-4.5539
-                                    c0.0709-0.0734,0.1414-0.1935,0.211-0.2555c0.5826-0.5197,1.2466-1.2574,2.0153-0.6486c0.7686,0.6088,0.2835,1.3551-0.0164,2.1568
-                                    s-0.8761,1.821-0.902,2.7054c-0.0447,1.5245,0.4776,2.513,2.0185,2.833s3.1801,0.331,4.7247-0.0045
-                                    c5.1776-1.1247,10.1269-2.7436,15.0536-4.6777c3.0928-1.2141,6.0419-2.7718,9.0528-4.1964
-                                    c0.4722-0.2234,0.86-0.7414,1.0688-1.1911c2.9831-6.4243,6.1145-12.7387,8.888-19.2338c0.1999-0.4682,0.4089-0.9013,0.7706-1.2326
-                                    c0.3617-0.3313,0.7454-0.5002,1.2043-0.3179c0.4588,0.1823,0.506,0.5915,0.4733,1.0522
-                                    c-0.0327,0.4607-0.1753,0.8757-0.3711,1.3159c-2.8421,6.3914-6.1601,12.3476-9.0904,18.7815
-                                    c-1.1675,2.5634-2.0201,5.7365-2.9005,8.4802c0.8387-0.5026,1.7032-1.1278,2.5418-1.6224
-                                    c3.2812-1.9352,6.5006-3.8138,9.4675-6.1968c0.4673-0.3753,0.8063-0.803,1.2888-1.1912c0.2067-0.1663,0.309-0.3815,0.676-0.3517
-                                    c0.367,0.0298,0.9518,0.0386,1.1819,0.4476c0.23,0.409,0.0121,0.8639-0.1898,1.2328c-0.202,0.3689-0.5258,0.5864-0.802,0.8684
-                                    c-2.0155,2.0574-4.0444,4.0782-6.073,6.1214c1.3362,0.4826,2.6782,1.0316,4.1091,0.7225c2.7225-0.588,4.9794-1.8405,7.3214-3.2853
-                                    c0.8953-0.5523,1.6667-1.2708,2.4865-1.937s1.38-1.4705,2.0283-2.322c0.982-1.2899,2.1917-2.2158,3.6369-2.9676
-                                    c0.1584,0.9558,0.3016,1.9162,0.4492,2.8743c-0.7435,0.6206-1.5049,1.2203-2.1963,1.903
-                                    c-0.2299,0.227-0.3575,0.7375-0.1663,0.9799c0.8469,1.0735,1.8368,1.4542,3.0865,1.8561
-                                    C295.9954,29.4785,296.0887,30.0982,296.1834,30.7134z" />
-                              </g>
-                              <path stroke="#FFF9F5" stroke-width="0.2894" d="M0.0278,45.4627c1.197-1.6886,2.642-3.1742,3.6905-4.9714
-                                 c5.7809-9.9083,10.6492-19.9665,14.3633-30.8515c0.1411-0.4135,0.1895-1.0191,0.2777-1.4602
-                                 C18.069,8.3488,17.6384,8.7034,17.376,8.864c-3.3051,2.0232-6.9176,3.8303-10.2294,5.6213
-                                 c-0.9948,0.538-2.0133,0.9329-2.3938-0.2418c-0.3804-1.1747,0.5073-1.4409,1.6352-2.0008
-                                 c3.8149-1.8935,8.0382-3.9397,11.6392-6.4395c0.2096-0.1455,0.4555-0.4129,0.6068-0.5392c0.8667-0.7239,1.3836-0.7916,2.391-0.3616
-                                 c-3.0637,10.6975-7.1082,20.8701-11.763,30.9665c0.4297-0.3288,0.8534-0.6693,1.2915-0.9861
-                                 c3.3734-2.4405,6.75-4.874,10.1085-7.3349c0.4608-0.3376,0.8049-0.8302,1.2076-1.2166c1.4385-1.3801,2.8431-2.2741,4.7883-2.8357
-                                 c0.3945-0.1139,0.9808,0.1357,1.1567,0.577c0.1758,0.4413-0.0552,1.0466-0.36,1.341c-0.85,0.821-2.1312,1.3605-2.9329,2.0876
-                                 c-1.2163,1.1031-1.3852,2.0827,0.0613,3.0277c1.4465,0.945,3.2599,1.4789,5.048,1.4193
-                                 c5.3343-0.1776,10.0287-1.4925,14.7884-3.8947c1.941-0.9796,3.5437-2.5961,5.3542-3.7525c0.6036-0.3856,1.1476-0.6759,1.699-0.1079
-                                 c0.5515,0.568,0.3812,1.1553-0.0383,1.8072c-1.2622,1.9616-2.6561,3.9461-3.9329,5.9255c0.0961,0.0772,0.1314,0.3593,0.2882,0.3329
-                                 c0.8301-0.1398,1.7043-0.2745,2.4514-0.658c2.5331-1.3003,4.9877-2.7877,7.4546-4.1653c1.8664-1.0423,3.715-2.2124,5.5677-3.1659
-                                 c0.916-0.4714,1.3456-0.0821,1.9568,0.5361c0.6111,0.6182,0.9214,1.6636,1.5544,2.2109c3.6687,3.1721,7.0311,4.9237,11.9406,3.9931
-                                 c4.4342-0.8405,8.2124-3.8317,11.7715-6.1418c1.1513-0.7473,1.662-1.5531,2.5549-0.5422c0.8929,1.011-0.1892,1.5661-1.0878,2.3658
-                                 c-1.5988,1.4229-3.3603,3.399-4.4543,5.3833c0.2333-0.0547,0.5905-0.1998,0.793-0.3218c1.2181-0.7338,2.3967-1.6264,3.5763-2.3418
-                                 c0.7892-0.4786,1.4738-0.4932,2.2668-0.1221c2.1482,1.0052,4.5061,2.4962,6.599,3.3216c1.5181,0.5986,2.7644,0.8259,4.1244,0.4173
-                                 c2.5498-0.766,3.9857-2.3797,5.9767-3.9711c0.2625-0.2098,0.4733-0.6492,0.8842-0.7282s0.8972-0.0393,1.2256,0.2509
-                                 c0.3284,0.2903,0.1768,0.8471,0.1434,1.1587c-0.0333,0.3116-0.2217,0.4922-0.3862,0.6027
-                                 c-2.2817,1.5329-3.9455,3.2948-6.6725,4.1105c-2.1908,0.6553-4.0869,0.246-6.3971-0.6089
-                                 c-1.7126-0.6338-3.9835-1.7298-5.8586-2.3735c-0.4852-0.1666-0.9169-0.2395-1.4414,0.0311
-                                 c-1.4717,0.7594-2.9375,1.6625-4.5136,2.3155c-0.5562,0.2305-1.3018,0.3679-1.7864-0.1218s-0.3392-1.1802-0.2476-1.7983
-                                 c0.0916-0.6181,0.3868-1.1479,0.5992-1.7146c-1.5156,0.5533-2.9839,1.4307-4.5332,1.8702c-2.4233,0.6874-4.785,1.593-7.3176,1.3101
-                                 c-3.8947-0.4351-6.5118-2.227-9.2755-4.9126c-0.6613-0.6426-1.0421-1.7107-1.6255-2.4421
-                                 c-1.167,0.6147-2.3635,1.2338-3.5023,1.9088c-2.5766,1.5272-5.1707,3.1682-7.7381,4.659c-0.9059,0.526-1.9599,0.9634-2.8542,1.2179
-                                 c-0.8943,0.2545-1.6386,0.3086-2.4193,0.1628c-1.183-0.221-1.4969-0.931-1.353-2.0056c0.1439-1.0746,0.7701-1.9791,1.0609-2.9993
-                                 c-0.4595,0.2221-0.9555,0.5801-1.4189,0.7764c-4.0825,1.7297-7.9847,3.5397-12.4052,4.1921
-                                 c-2.9591,0.4367-5.63-0.2255-8.4115-1.3105c-1.4772-0.5762-2.2888-1.9777-3.0558-3.3006c-2.2384,1.5177-4.531,3.0356-6.7224,4.6221
-                                 c-1.6664,1.2064-3.3685,2.371-4.9373,3.6764c-2.5401,2.1136-4.5323,4.5618-6.4825,7.2058
-                                 c-0.5121,0.6944-0.9624,1.4627-1.5449,2.0995S0.7219,47.5095,0,47.1279C0.002,46.5709,0.0048,46.014,0.0278,45.4627z" />
-                              <path stroke="#FFF9F5" stroke-width="0.2894" d="M155.415,37.3314c-1.3138,0.5682-2.4616,1.7064-3.8622,2.0679
-                                 c-3.2159,0.83-6.024,0.4933-8.4784-1.7693c-1.7345-1.5989-1.3383-3.4069,0.3766-4.7816c1.7149-1.3747,4.0141-1.8224,5.9774-2.7718
-                                 c0.3886-0.1879,0.8801-0.222,1.2805-0.3655c-1.3156-0.6363-2.8118-1.0537-4.0347-1.8648c-1.9002-1.2603-3.3462-2.758-3.8692-4.9966
-                                 c-0.5229-2.2386,0.194-4.5333,1.3666-6.2221c2.7067-3.8983,5.3128-6.5673,9.7648-7.8251c3.1203-0.8816,5.817-0.4532,8.6106,0.8512
-                                 s4.005,3.4717,3.3885,6.6617s-2.8984,6.0043-5.0732,8.5289c-0.5042,0.5853-1.4702,1.0168-2.071,0.2606
-                                 c-0.6008-0.7563-0.0481-1.487,0.4577-2.1056c1.2229-1.4957,2.5592-2.7994,3.5542-4.4431c0.7148-1.1809,1.3081-2.433,1.4768-3.8091
-                                 s-0.2365-2.6207-1.5514-3.1945c-2.1184-0.9245-4.0856-1.689-6.4672-1.354c-4.2708,0.6007-7.2116,2.7173-10.1897,5.8016
-                                 c-0.4132,0.4279-0.7983,1.0925-0.9814,1.7034c-0.9707,3.2395-1.0702,5.8573,1.7443,8.1229
-                                 c2.1139,1.7016,4.5295,2.032,7.2231,2.3044c2.6936,0.2725,5.6393-0.2803,8.3881-0.3656c0.3277-0.0102,0.7061-0.1401,1.049-0.1093
-                                 c0.6853,0.0615,1.2933,0.0913,1.2915,0.9693s-0.1949,1.4169-1.2683,1.5413c-1.6535,0.1916-3.6147,0.2886-5.332,0.4289
-                                 c0.5406,0.5009,1.1118,0.9977,1.6603,1.4962c-0.5051,0.6815-1.1253,1.2886-1.5045,2.0532
-                                 c-0.3792,0.7646-0.4864,1.6015-0.7281,2.4132c0.7378,0.1523,1.4596,0.4622,2.2173,0.4366c1.0954-0.0372,2.138-0.327,3.202-0.5321
-                                 c0.4802-0.0926,0.9625-0.212,1.4463-0.2247s1.3397,0.1598,1.5282,0.5746c0.3893,0.8568-0.2324,1.3837-0.951,1.5828
-                                 c-2.5916,0.7181-4.9012,0.9341-7.5529,0.4212C156.6756,38.6561,156.097,37.7759,155.415,37.3314z M157.9909,30.8253
-                                 c-4.3918,0.6252-8.6754,1.4567-12.8877,2.8362c-0.3489,0.1143-0.7155,0.3787-0.9336,0.6017
-                                 c-0.606,0.6198-0.9221,1.3607-0.2308,2.0134c1.5701,1.4825,3.3169,2.6598,5.5287,1.9267
-                                 C153.4185,36.8937,155.5904,34.0394,157.9909,30.8253z" />
-                              <path stroke="#FFF9F5" stroke-width="0.2894" d="M239.7559,16.0483c-0.2034,0.0204-0.7717,0.0824-1.1699-0.042
-                                 c-0.3982-0.1244-0.7877-0.6382-0.8026-1.137c-0.0149-0.4988,0.6357-0.9005,0.9315-0.9255
-                                 c1.3295-0.1126,2.1292,0.0278,3.4896-0.0797c0.2984-0.0236,1.3866-0.3008,1.8219-0.2992c0.4353,0.0016,0.754,0.1881,1.1214,0.3526
-                                 c-0.0849,0.3982-0.3546,0.8863-0.5358,1.2059c-0.1812,0.3196-0.799,0.3453-0.9591,0.3664
-                                 C242.2247,15.6779,241.1995,15.9032,239.7559,16.0483z" />
-                           </g>
-                        </svg>
-                     </div>
-                     <p class="text-dark">Friendship... is not something you learn in school. But if you haven't learned the meaning of friendship, you really haven't learned anything.</p>
-                  </div>
                   <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="col-md-3">
-                     <h6 class="text-uppercase font-weight-600 font-size-15 mb-4 upper-letter-space">Instagram</h6>
-                     <ul class="instafeed-list list-inline mb-3" id="instafeed"></ul>
-                  </div>
-                  <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="col-md-4">
-                     <h6 class="text-uppercase font-weight-600 font-size-15 mb-4 upper-letter-space">Newsletter</h6>
-                     <p class="text-dark">Wedding news, articles, and resources, directly to your inbox each month.</p>
-                     <div>
-                        <form method="post">
-                           <div class="input-group mb-2">
-                              <input type="email" class="form-control" name="email" placeholder="Your email">
-                           </div>
-                           <button type="submit" class="btn btn-primary w-100">
-                           Subscribe
-                           </button>
-                        </form>
-                        <small class="text-dark-gray opacity-8 mt-2">We don't share your information. <a href="#">Privacy Policy</a>
-                        </small>
-                     </div>
+                     <h6 class="text-uppercase font-weight-600 font-size-15 mb-4 upper-letter-space">공유하기</h6>
+                     <a id="kakao-link-btn" href="javascript:sendLink()"><img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/></a>
                   </div>
                </div>
                <!--End row-->
@@ -728,9 +720,9 @@
       <script src="{% static "js/jquery.magnific-popup.min.js" %}"></script>
       <script src="{% static "js/jquery.countdown.min.js" %}"></script>
       <script src="{% static "js/placeholders.min.js" %}"></script>
-      <script src="{% static "js/instafeed.min.js" %}"></script>
       <script src="{% static "js/ScrollTrigger.min.js" %}"></script>
       <script src="{% static "js/script.js" %}"></script>
+      <script src="//developers.kakao.com/sdk/js/kakao.min.js"></script>
       <script>
          document.addEventListener('DOMContentLoaded', function(){
             var trigger = new ScrollTrigger({
@@ -744,9 +736,20 @@
             $("#desc").removeClass("fromRightOut");
             $("#desc").addClass("fromRightIn");
          }
+         //<![CDATA[
+            // // 사용할 앱의 JavaScript 키를 설정해 주세요.
+            Kakao.init('{{ settings.KAKAO_API_KEY }}');
+            // // 카카오링크 버튼을 생성합니다. 처음 한번만 호출하면 됩니다.
+            function sendLink() {
+               Kakao.Link.sendCustom({
+               templateId: 19113,
+               templateArgs: {
+                  'title': '제목 영역입니다.',
+                  'description': '설명 영역입니다.'
+               }
+               });
+            }
+         //]]>
       </script>
    </body>
 </html>
-<!-- 
-   https://beatpb.club/search/epub/16/7// -->
-
