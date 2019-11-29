@@ -14,19 +14,21 @@
     }), a("a.scroll").smoothScroll({
         speed: 800,
         offset: -180
-    }), a(".popup-image").magnificPopup({
-        type: "image",
-        fixedContentPos: !1,
-        fixedBgPos: !1,
-        mainClass: "mfp-no-margins mfp-with-zoom",
-        image: {
-            verticalFit: !0
-        },
-        zoom: {
-            enabled: !0,
-            duration: 300
-        }
-    }), a(".popup-youtube, .popup-vimeo").magnificPopup({
+    }), 
+    // a(".popup-image").magnificPopup({
+    //     type: "image",
+    //     fixedContentPos: !1,
+    //     fixedBgPos: !1,
+    //     mainClass: "mfp-no-margins mfp-with-zoom",
+    //     image: {
+    //         verticalFit: !0
+    //     },
+    //     zoom: {
+    //         enabled: !0,
+    //         duration: 300
+    //     }
+    // }),
+    a(".popup-youtube, .popup-vimeo").magnificPopup({
         disableOn: 700,
         type: "iframe",
         mainClass: "mfp-fade",
@@ -64,6 +66,17 @@
 
 
 $(function () {
+    $(".slider").slick({
+        dots: false,
+        infinite: true,
+        //autoplay: true,
+        speed: 300,
+        slidesToShow: 1,
+        //adaptiveHeight: true,
+        nextArrow: "",
+        prevArrow: "",
+        mobileFirst: true,
+    });
     // VARIABLEZ
     // play with them
     var c = document.querySelector('canvas'),

@@ -22,4 +22,5 @@ from dammin import settings
 
 urlpatterns = [
     path('', views.IndexView),
+    path('/comment', views.CommentListJson.as_view(), name='comment_list_json'),
 ]
