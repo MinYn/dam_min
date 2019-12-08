@@ -67,15 +67,14 @@
 
 $(function () {
     $(".slider").slick({
-        dots: false,
+        dots: true,
         infinite: true,
         //autoplay: true,
         speed: 300,
         slidesToShow: 1,
         //adaptiveHeight: true,
-        nextArrow: "",
-        prevArrow: "",
         mobileFirst: true,
+        arrows: true,
     });
     // VARIABLEZ
     // play with them

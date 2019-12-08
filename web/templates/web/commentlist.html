@@ -1,0 +1,13 @@
+{% for item in comment %}
+<article class="comment">
+    <div class="comment-body">
+    <div class="text">
+        <p>{{item.content}}</p>
+    </div>
+    <p class="attribution">
+        {{item.name}}님 {{item.created}}
+        <span id="edit" data-id="{{ item.id }}" data-name="{{ item.name }}" data-content="{{ item.content }}" class="text-right fa fa-edit" style="color:#e25d5d;padding-left: 10px;padding-right: 5px;" data-toggle="modal" data-target="#editModal"></span>
+        <span id="delete" data-id="{{ item.id }}" class="fa fa-backspace" style="color:#e25d5d;" data-toggle="modal" data-target="#deleteModal"></span>
+    </p>
+</article>
+{% endfor %}
