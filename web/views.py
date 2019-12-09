@@ -72,7 +72,7 @@ class CommentList(TemplateView):
 
 
 def IndexView(request):
-    return render(request, 'web/index.html', {'settings': settings, 'object': object})
+    return render(request, 'web/index.html', {'settings': settings})
 
 
 def PlayerView(request):
