@@ -546,7 +546,12 @@
                <div class="row justify-content-center">
                   <div data-scroll="toggle(.fromBottomIn, .fromBottomOut)" class="col-md-3">
                      <h6 class="text-uppercase font-weight-600 mb-4 upper-letter-space">청첩장 공유</h6>
+                  </div>
+                  <div class="col-md-11">
                      <a id="kakao-link-btn" href="javascript:sendLink()"><img src="//developers.kakao.com/assets/img/about/logos/kakaolink/kakaolink_btn_medium.png"/></a>
+                     <a href="javascript:sharesms()">
+                        <span class="fa fa-sms" style="color:#e25d5d;padding-left: 8px;font-size: 4rem;vertical-align: middle;" ></span>
+                     </a>
                   </div>
                </div>
                <!--End row-->
@@ -855,6 +860,45 @@
                $('audio')[0].pause();
             }else{
                ie_player.bgmStop();
+            }
+         }
+
+         function checkMobile(){
+            var varUA = navigator.userAgent.toLowerCase(); //userAgent 값 얻기
+            if ( varUA.indexOf('android') > -1) {
+               //안드로이드
+               return "android";
+            } else if ( varUA.indexOf("iphone") > -1||varUA.indexOf("ipad") > -1||varUA.indexOf("ipod") > -1 ) {
+               //IOS
+               return "ios";
+            } else {
+               //아이폰, 안드로이드 외
+               return "other";
+            }
+         }
+         function sharesms(){
+            var share_text = "석민♥다미 저희 결혼합니다 :)%0D%0A행복이 가득한 결혼식을 축복해 주세요♡%0D%0A%0D%0A일시 : 2020년 2월 22일 토요일 저녁 18시 30분%0D%0A장소 : 서울 강남구 봉은사로 302 벨라비타컨벤션 1층(선정릉역 4번 출구 도보 5분, 언주역 5번 출구 도보 5분)";
+            if(checkMobile()=="android"){
+               location.href="sms:?body="+share_text;
+            }else if(checkMobile()=="ios"){
+               var version = iOS_version();
+               if(version.Full_Release_Numeric<=8){
+                  location.href="sms:;body="+share_text;
+               }else if(version.Full_Release_Numeric>8){
+                  location.href="sms:&body="+share_text;
+               }
+            }
+         }
+         function iOS_version() { 
+            if(navigator.userAgent.match(/ipad|iphone|ipod/i)){
+               var ios_info ={};
+               ios_info.User_Agent=navigator.userAgent;
+               ios_info.As_Reported=(navigator.userAgent).match(/OS (\d)?\d_\d(_\d)?/i)[0];
+               ios_info.Major_Release=(navigator.userAgent).match(/OS (\d)?\d_\d(_\d)?/i)[0].split('_')[0];
+               ios_info.Full_Release=(navigator.userAgent).match(/OS (\d)?\d_\d(_\d)?/i)[0].replace(/_/g,".");
+               ios_info.Major_Release_Numeric=+(navigator.userAgent).match(/OS (\d)?\d_\d(_\d)?/i)[0].split('_')[0].replace("OS ","");
+               ios_info.Full_Release_Numeric=+(navigator.userAgent).match(/OS (\d)?\d_\d(_\d)?/i)[0].replace("_",".").replace("_","").replace("OS ","");
+               return(ios_info);
             }
          }
       </script>
