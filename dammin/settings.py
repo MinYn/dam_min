@@ -26,7 +26,7 @@ SECRET_KEY = 'f(*58#xn6gp_cx2nw4ao+2dz8xbo-h2wz3yh1!98_bqd)+0wi+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['.herokuapp.com', '.asuscomm.com', '127.0.0.1']
+ALLOWED_HOSTS = ['dammin.co.kr', '127.0.0.1']
 
 DISQUS_WEBSITE_SHORTNAME = 'dammin'
 SITE_ID = 1
