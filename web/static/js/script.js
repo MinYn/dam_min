@@ -37,6 +37,7 @@
         fixedContentPos: !1
     });
     var o = a(".video-cover .play-but");
+    var finalDate = moment.tz("2020-02-22 18:30", "Asia/Seoul").toDate();
     a(".video-cover").each(function () {
         a(this).find("iframe").length && a(this).find("iframe").attr("data-src", a(this).find("iframe").attr("src"), a(this).find("iframe").attr("src", ""))
     }), o.on("click", function () {
@@ -52,14 +53,21 @@
     //     resolution: "standard_resolution",
     //     template: '<li><a class="hover-effect rounded-circle" target="_blank" href="{{link}}"><span class="hover-effect-container"><span class="hover-effect-icon hover-effect-icon-small"><span class="fa fa-heart hover-effect-icon-inner"></span></span></span></span><img class=" mw-100" src="{{image}}" /></a></li>'
     // }).run()
-    , a(".countdown").countdown("2020/02/22 18:30").on("update.countdown", function (s) {
-        a(this).html(s.strftime('\
-        <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%m</span> <span class="label">개월</span></div></div>\
-        <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%d</span> <span class="label">일</span></div></div>\
-        <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%H</span> <span class="label">시간</span></div></div>\
-        <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">%M</span> <span class="label">분</span></div></div>\
-        <div class="col"><div class="card card-body countdown-shadow p-3"><span class="counter text-primary mb-1">%S</span> <span class="label">초</span></div></div>\
-        '));
+    , 
+    a(".countdown").countdown(finalDate).on("update.countdown", function (s) {
+        console.log(finalDate, s);
+        var months = s.offset.months;
+        var day = s.offset.daysToMonth;
+        var hours = s.offset.hours;
+        var minutes = s.offset.minutes;
+        var seconds = s.offset.seconds;
+        a(this).html('\
+        <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">'+months+'</span> <span class="label">개월</span></div></div>\
+        <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">'+day+'</span> <span class="label">일</span></div></div>\
+        <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">'+hours+'</span> <span class="label">시간</span></div></div>\
+        <div class="col"><div class="card card-body countdown-shadow mb-4 mb-lg-0 p-3"><span class="counter text-primary mb-1">'+minutes+'</span> <span class="label">분</span></div></div>\
+        <div class="col"><div class="card card-body countdown-shadow p-3"><span class="counter text-primary mb-1">'+seconds+'</span> <span class="label">초</span></div></div>\
+        ');
     })
 }(jQuery);
 
